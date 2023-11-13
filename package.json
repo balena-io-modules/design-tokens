@@ -1,12 +1,19 @@
 {
-	"name": "design-tokens",
-	"version": "1.0.0",
-	"description": "Design Tokens for balena Design System",
-	"main": "scripts/index.js",
+	"name": "@balena/design-tokens",
+	"version": "0.0.1",
+	"main": "build/js/tokens.js",
+	"module": "build/js/tokens.js",
+	"types": "build/js/tokens.d.ts",
+	"files": [
+		"build",
+		"README.md"
+	],
 	"scripts": {
-		"prebuild": "rm -rf build/",
+		"prebuild": "rimraf build/",
 		"build": "ts-node --project tsconfig.ts-node.json scripts/transform.ts",
-		"postbuild": "prettier ./build/**/* --write --config .prettierrc --ignore-path .prettierignore"
+		"postbuild": "prettier ./build/**/* --write --config .prettierrc.js --ignore-path .prettierignore",
+		"prepack": "npm run build",
+		"start": "chokidar src/ -c \"npm run build --ignore-scripts\""
 	},
 	"repository": {
 		"type": "git",
@@ -20,7 +27,9 @@
 	"homepage": "https://github.com/balena-io-modules/design-tokens#readme",
 	"devDependencies": {
 		"@balena/lint": "^7.2.1",
+		"chokidar-cli": "^3.0.0",
 		"prettier": "^3.0.3",
+		"rimraf": "^5.0.5",
 		"style-dictionary": "^3.9.0",
 		"ts-node": "^10.9.1"
 	}
