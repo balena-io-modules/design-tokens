@@ -14,7 +14,7 @@ const { fileHeader, getTypeScriptType } = StyleDictionary.formatHelpers;
 StyleDictionary.registerFormat({
 	name: 'javascript/esm',
 	formatter: ({ dictionary, file }: { dictionary: Dictionary; file: File }) => {
-		const newTokens = createTokensObject(dictionary);
+		const newTokens = flattenDefaultTokens(dictionary.allTokens);
 
 		let result = fileHeader({ file });
 
@@ -37,7 +37,7 @@ StyleDictionary.registerFormat({
 StyleDictionary.registerFormat({
 	name: 'typescript/esm-declarations',
 	formatter: ({ dictionary, file }: { dictionary: Dictionary; file: File }) => {
-		const newTokens = createTokensObject(dictionary, true);
+		const newTokens = flattenDefaultTokens(dictionary.allTokens, true);
 
 		let result = fileHeader({ file });
 
@@ -59,11 +59,11 @@ StyleDictionary.registerFormat({
  * Remove the 'default' path from the tokens and strip the
  * tokens from everything except `value`
  */
-function createTokensObject(
-	dictionary: Dictionary,
+export function flattenDefaultTokens(
+	tokens: TransformedToken[],
 	isTSDeclaration: boolean = false,
-): Dictionary {
-	return dictionary.allTokens.reduce((acc: any, token: TransformedToken) => {
+): TransformedTokens {
+	return tokens.reduce((acc: any, token: TransformedToken) => {
 		const newPath = token.path.filter((pathPart) => pathPart !== '_');
 		return addTokenToObject(acc, newPath, token, isTSDeclaration);
 	}, {});

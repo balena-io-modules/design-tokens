@@ -13,7 +13,8 @@
 		"build": "ts-node --project tsconfig.ts-node.json scripts/transform.ts",
 		"postbuild": "prettier ./build/**/* --write --config .prettierrc.js --ignore-path .prettierignore",
 		"prepack": "npm run build",
-		"start": "chokidar src/ -c \"npm run build --ignore-scripts\""
+		"start": "chokidar src/ -c \"npm run build --ignore-scripts\"",
+		"test": "vitest"
 	},
 	"repository": {
 		"type": "git",
@@ -31,6 +32,7 @@
 		"prettier": "^3.0.3",
 		"rimraf": "^5.0.5",
 		"style-dictionary": "^3.9.0",
-		"ts-node": "^10.9.1"
+		"ts-node": "^10.9.1",
+		"vitest": "^0.34.6"
 	}
 }
