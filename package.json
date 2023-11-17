@@ -13,7 +13,7 @@
 		"build": "ts-node --project tsconfig.ts-node.json scripts/transform.ts",
 		"postbuild": "prettier ./build/**/* --write --config .prettierrc.js --ignore-path .prettierignore",
 		"prepack": "npm run build",
-		"start": "chokidar src/ -c \"npm run build --ignore-scripts\"",
+		"start": "chokidar tokens/ -c \"npm run build --ignore-scripts\"",
 		"test": "vitest"
 	},
 	"repository": {
