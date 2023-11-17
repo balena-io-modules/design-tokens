@@ -1,0 +1,11 @@
+- commits:
+    - subject: Fix versionist error in previous PR
+      hash: 251cf8d21e965212d473f9d5fa26251dcd9a268e
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Jonathan Berger
+  version: 0.1.0
+  title: ""
+  date: 2023-11-17T09:45:28.103Z
