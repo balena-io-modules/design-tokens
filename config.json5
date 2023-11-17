@@ -1,0 +1,33 @@
+{
+	source: ['tokens/**/*.json'],
+	platforms: {
+		css: {
+			transformGroup: 'css',
+			transforms: ['attribute/cti', 'name/cti/kebab', 'color/css'],
+			buildPath: 'build/css/',
+			options: {
+				outputReferences: true,
+			},
+			files: [
+				{
+					destination: 'tokens.css',
+					format: 'css/variables',
+				},
+			],
+		},
+		js: {
+			transformGroup: 'js',
+			buildPath: 'build/js/',
+			files: [
+				{
+					destination: 'tokens.js',
+					format: 'javascript/esm',
+				},
+				{
+					destination: 'tokens.d.ts',
+					format: 'typescript/esm-declarations',
+				},
+			],
+		},
+	},
+}

@@ -1,0 +1,9 @@
+{
+	"*.{ts,tsx}": [
+		"balena-lint --fix"
+	],
+	"package-lock.json": [
+		"npm dedupe",
+		"git diff --exit-code -- package-lock.json || echo \"Deduplicated package-lock.json, please run a fresh npm install and test dashboard\""
+	]
+}
