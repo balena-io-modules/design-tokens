@@ -2,8 +2,8 @@
 	source: ['tokens/**/*.json'],
 	platforms: {
 		css: {
-			transformGroup: 'css',
 			transforms: ['attribute/cti', 'name/cti/kebab', 'color/css'],
+			transformGroup: 'css',
 			buildPath: 'build/css/',
 			options: {
 				outputReferences: true,
