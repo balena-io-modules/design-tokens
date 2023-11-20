@@ -1,4 +1,15 @@
 - commits:
+    - subject: Change color for default border
+      hash: 6a19cc6c417af95b52b9f7973cec7248c9d28abb
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Jonathan Berger
+  version: 0.1.1
+  title: ""
+  date: 2023-11-20T12:09:06.075Z
+- commits:
     - subject: Fix versionist error in previous PR
       hash: 251cf8d21e965212d473f9d5fa26251dcd9a268e
       body: ""
