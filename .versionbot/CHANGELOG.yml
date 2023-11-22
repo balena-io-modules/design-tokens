@@ -1,4 +1,15 @@
 - commits:
+    - subject: Update README
+      hash: 1ac19eb4e3d3a72608cc2ccf673a9d793b2f6f87
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Jonathan Berger
+  version: 0.1.2
+  title: ""
+  date: 2023-11-22T19:29:29.862Z
+- commits:
     - subject: Change color for default border
       hash: 6a19cc6c417af95b52b9f7973cec7248c9d28abb
       body: ""
