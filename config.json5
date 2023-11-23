@@ -29,5 +29,15 @@
 				},
 			],
 		},
+		json: {
+			transformGroup: 'js',
+			buildPath: 'build/json/',
+			files: [
+				{
+					destination: 'tokens.json',
+					format: 'json/flat-with-references',
+				},
+			],
+		},
 	},
 }

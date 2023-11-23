@@ -52,6 +52,10 @@ The custom properties will be added to the `:root` element, and you can use them
 }
 ```
 
+### Note
+
+A JSON object containing all tokens with extra information is also available for documentation purposes.
+
 ## Update tokens
 
 The tokens are exported from our Figma Design System library: https://www.figma.com/file/P7wVVPymUK4ekV6QOa3i0s/Design-System?type=design&t=hi4n82bo8vGO8noO-6
@@ -84,7 +88,7 @@ This package uses [Style Dictionary](https://amzn.github.io/style-dictionary/#/)
 npm install
 ```
 
-#### Develop (watch the tokens folder)
+#### Develop (watch the token folder)
 
 ```bash
 npm start

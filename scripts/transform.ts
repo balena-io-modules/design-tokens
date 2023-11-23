@@ -55,6 +55,13 @@ StyleDictionary.registerFormat({
 	},
 });
 
+StyleDictionary.registerFormat({
+	name: `json/flat-with-references`,
+	formatter: function ({ dictionary }) {
+		return JSON.stringify(dictionary.allTokens, null, 2);
+	},
+});
+
 /**
  * Remove the 'default' path from the tokens and strip the
  * tokens from everything except `value`
