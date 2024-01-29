@@ -1,4 +1,15 @@
 - commits:
+    - subject: Bump vitest to latest version
+      hash: 519ceb3ff1d4402f4ddfed7c282f1fb0363216ce
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Jonathan Berger
+  version: 0.2.1
+  title: ""
+  date: 2024-01-29T15:11:08.468Z
+- commits:
     - subject: Add JSON output for documentation purposes
       hash: 28e9c0059f0c93f76f2a0fbdc8395e8a738cc29a
       body: ""
