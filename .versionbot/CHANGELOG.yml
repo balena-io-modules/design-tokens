@@ -1,4 +1,15 @@
 - commits:
+    - subject: Update tokens, un-minify token file
+      hash: 5c697ffb9ededa27692e72e20e9527a813c59ac9
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Jonathan Berger
+  version: 0.3.0
+  title: ""
+  date: 2024-02-12T12:59:39.317Z
+- commits:
     - subject: Bump vitest to latest version
       hash: 519ceb3ff1d4402f4ddfed7c282f1fb0363216ce
       body: ""
