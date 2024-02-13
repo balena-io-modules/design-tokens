@@ -4,27 +4,27 @@
 			"neutral": {
 				"50": {
 					"type": "color",
-					"value": "#f7fafdff",
+					"value": "#f9fafbff",
 					"blendMode": "normal"
 				},
 				"75": {
 					"type": "color",
-					"value": "#deebf6ff",
+					"value": "#e3ebf1ff",
 					"blendMode": "normal"
 				},
 				"100": {
 					"type": "color",
-					"value": "#c5dceeff",
+					"value": "#ccdbe7ff",
 					"blendMode": "normal"
 				},
 				"200": {
 					"type": "color",
-					"value": "#aecde5ff",
+					"value": "#b5ccdeff",
 					"blendMode": "normal"
 				},
 				"300": {
 					"type": "color",
-					"value": "#97bddbff",
+					"value": "#9cbcd6ff",
 					"blendMode": "normal"
 				},
 				"400": {
