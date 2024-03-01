@@ -2,8 +2,12 @@
 	source: ['tokens/**/*.json'],
 	platforms: {
 		css: {
-			transforms: ['attribute/cti', 'name/cti/kebab', 'color/css'],
-			transformGroup: 'css',
+			transforms: [
+				'attribute/cti',
+				'name/cti/kebab',
+				'color/css',
+				'custom/pxToRem',
+			],
 			buildPath: 'build/css/',
 			options: {
 				outputReferences: true,
@@ -11,20 +15,29 @@
 			files: [
 				{
 					destination: 'tokens.css',
+					filter: 'remove-useless-tokens',
 					format: 'css/variables',
 				},
 			],
 		},
 		js: {
-			transforms: ['attribute/cti', 'name/cti/pascal', 'size/rem', 'color/css'],
+			transforms: [
+				'attribute/cti',
+				'name/cti/pascal',
+				'size/rem',
+				'color/css',
+				'custom/pxToRem',
+			],
 			buildPath: 'build/js/',
 			files: [
 				{
 					destination: 'tokens.js',
+					filter: 'remove-useless-tokens',
 					format: 'javascript/esm',
 				},
 				{
 					destination: 'tokens.d.ts',
+					filter: 'remove-useless-tokens',
 					format: 'typescript/esm-declarations',
 				},
 			],
@@ -35,6 +48,7 @@
 			files: [
 				{
 					destination: 'tokens.json',
+					filter: 'remove-useless-tokens',
 					format: 'json/flat-with-references',
 				},
 			],

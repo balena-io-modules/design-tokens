@@ -11,6 +11,18 @@ import {
 } from 'style-dictionary';
 const { fileHeader, getTypeScriptType } = StyleDictionary.formatHelpers;
 
+const USELESS_TOKENS = [
+	'textDecoration',
+	'fontFamily',
+	'fontStyle',
+	'fontStretch',
+	'letterSpacing',
+	'paragraphIndent',
+	'paragraphSpacing',
+];
+
+const BASE_FONT_SIZE = 14;
+
 StyleDictionary.registerFormat({
 	name: 'javascript/esm',
 	formatter: ({ dictionary, file }: { dictionary: Dictionary; file: File }) => {
@@ -56,9 +68,32 @@ StyleDictionary.registerFormat({
 });
 
 StyleDictionary.registerFormat({
-	name: `json/flat-with-references`,
+	name: 'json/flat-with-references',
 	formatter: function ({ dictionary }) {
 		return JSON.stringify(dictionary.allTokens, null, 2);
+	},
+});
+
+StyleDictionary.registerFilter({
+	name: 'remove-useless-tokens',
+	matcher: (token: TransformedToken) => {
+		if (token.attributes.category !== 'typography') {
+			return true;
+		}
+
+		const lastItem = token.path.slice(-1)[0];
+		return !USELESS_TOKENS.includes(lastItem);
+	},
+});
+
+StyleDictionary.registerTransform({
+	name: 'custom/pxToRem',
+	type: 'value',
+	matcher: (token: TransformedToken) =>
+		token.path.slice(-1)[0] === 'fontSize' ||
+		token.path.slice(-1)[0] === 'lineHeight',
+	transformer: (token: TransformedToken) => {
+		return `${pxToBaseSize(token.value)}rem`;
 	},
 });
 
@@ -101,6 +136,12 @@ function addTokenToObject(
 	}
 
 	return obj;
+}
+
+function pxToBaseSize(value: number, decimals = 3) {
+	return (value / BASE_FONT_SIZE).toLocaleString(undefined, {
+		maximumFractionDigits: decimals,
+	});
 }
 
 StyleDictionary.buildAllPlatforms();
