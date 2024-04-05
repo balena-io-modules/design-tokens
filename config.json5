@@ -16,7 +16,7 @@
 			],
 		},
 		js: {
-			transformGroup: 'js',
+			transforms: ['attribute/cti', 'name/cti/pascal', 'size/rem', 'color/css'],
 			buildPath: 'build/js/',
 			files: [
 				{
