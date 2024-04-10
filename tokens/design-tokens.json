@@ -505,7 +505,7 @@
 			},
 			"subtle": {
 				"type": "color",
-				"value": "{color.palette.neutral.700}"
+				"value": "{color.palette.neutral.600}"
 			},
 			"subtlest": {
 				"type": "color",
