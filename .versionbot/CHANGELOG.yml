@@ -1,4 +1,15 @@
 - commits:
+    - subject: Change text subtle value
+      hash: a77cd22d3fba3be929027e868d4c8275d957dddd
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Jonathan Berger
+  version: 0.4.1
+  title: ""
+  date: 2024-04-10T12:22:23.464Z
+- commits:
     - subject: Desaturate neutral light colors
       hash: 207b300846a1f1026f7f664e676b34138238a604
       body: ""
