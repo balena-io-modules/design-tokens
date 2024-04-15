@@ -1,4 +1,15 @@
 - commits:
+    - subject: Add overlay colors
+      hash: 6853e532334a31d5c9b2654de82c25115fca3d7a
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Jonathan Berger
+  version: 0.4.2
+  title: ""
+  date: 2024-04-15T18:44:34.728Z
+- commits:
     - subject: Change text subtle value
       hash: a77cd22d3fba3be929027e868d4c8275d957dddd
       body: ""
