@@ -608,6 +608,18 @@
 					"type": "color",
 					"value": "{color.palette.red.800}"
 				}
+			},
+			"overlay": {
+				"light": {
+					"type": "color",
+					"value": "#ffffffcc",
+					"blendMode": "normal"
+				},
+				"dark": {
+					"type": "color",
+					"value": "#0a1924cc",
+					"blendMode": "normal"
+				}
 			}
 		},
 		"border": {
