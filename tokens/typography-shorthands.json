@@ -55,6 +55,13 @@
 					"value": "{typography.code.md.fontWeight} {typography.code.md.fontSize}/{typography.code.md.lineHeight} {typography.fontfamily.code}"
 				}
 			}
+		},
+		"components":  {
+			"badge": {
+				"shorthand": {
+					"value": "{typography.components.badge.fontWeight} {typography.components.badge.fontSize}/{typography.components.badge.lineHeight} {typography.fontfamily.body}"
+				}
+			}
 		}
 	}
 }
