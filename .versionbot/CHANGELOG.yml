@@ -1,4 +1,15 @@
 - commits:
+    - subject: Add typography tokens
+      hash: 0bb75ef88ec6aaf4d51e50447df570473b36cd97
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Jonathan Berger
+  version: 0.5.0
+  title: ""
+  date: 2024-04-29T09:12:08.632Z
+- commits:
     - subject: Add overlay colors
       hash: 6853e532334a31d5c9b2654de82c25115fca3d7a
       body: ""
