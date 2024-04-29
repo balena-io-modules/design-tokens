@@ -1,0 +1,60 @@
+{
+	"typography": {
+		"display": {
+			"shorthand": {
+				"value": "{typography.display.fontWeight} {typography.display.fontSize}/{typography.display.lineHeight} {typography.fontfamily.body}"
+			}
+		},
+		"title": {
+			"lg": {
+				"shorthand": {
+					"value": "{typography.title.lg.fontWeight} {typography.title.lg.fontSize}/{typography.title.lg.lineHeight} {typography.fontfamily.body}"
+				}
+			},
+			"md": {
+				"shorthand": {
+					"value": "{typography.title.md.fontWeight} {typography.title.md.fontSize}/{typography.title.md.lineHeight} {typography.fontfamily.body}"
+				}
+			},
+			"sm": {
+				"shorthand": {
+					"value": "{typography.title.sm.fontWeight} {typography.title.sm.fontSize}/{typography.title.sm.lineHeight} {typography.fontfamily.body}"
+				}
+			}
+		},
+		"body": {
+			"lg": {
+				"shorthand": {
+					"value": "{typography.body.lg.fontWeight} {typography.body.lg.fontSize}/{typography.body.lg.lineHeight} {typography.fontfamily.body}"
+				}
+			},
+			"md": {
+				"shorthand": {
+					"value": "{typography.body.md.fontWeight} {typography.body.md.fontSize}/{typography.body.md.lineHeight} {typography.fontfamily.body}"
+				}
+			},
+			"sm": {
+				"shorthand": {
+					"value": "{typography.body.sm.fontWeight} {typography.body.sm.fontSize}/{typography.body.sm.lineHeight} {typography.fontfamily.body}"
+				}
+			}
+		},
+		"overline": {
+			"shorthand": {
+				"value": "{typography.overline.fontWeight} {typography.overline.fontSize}/{typography.overline.lineHeight} {typography.fontfamily.body}"
+			}
+		},
+		"code": {
+			"lg": {
+				"shorthand": {
+					"value": "{typography.code.lg.fontWeight} {typography.code.lg.fontSize}/{typography.code.lg.lineHeight} {typography.fontfamily.code}"
+				}
+			},
+			"md": {
+				"shorthand": {
+					"value": "{typography.code.md.fontWeight} {typography.code.md.fontSize}/{typography.code.md.lineHeight} {typography.fontfamily.code}"
+				}
+			}
+		}
+	}
+}
