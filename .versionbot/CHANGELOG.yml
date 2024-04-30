@@ -1,4 +1,17 @@
 - commits:
+    - subject: Add palette colors for categories
+      hash: 397886a1aebfa05cf3d7187d8fdef90cef46b18b
+      body: >
+        Categories (bg, text, icon, border) now have palette colors, which are
+        independent of any role.
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Jonathan Berger
+  version: 0.6.0
+  title: ""
+  date: 2024-04-30T12:24:23.855Z
+- commits:
     - subject: Add typography tokens
       hash: 0bb75ef88ec6aaf4d51e50447df570473b36cd97
       body: ""
