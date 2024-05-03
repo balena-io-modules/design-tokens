@@ -1,4 +1,15 @@
 - commits:
+    - subject: Decrease badge font-weight
+      hash: 76676237672a4ff16352f7decccda321eebc1893
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Jonathan Berger
+  version: 0.6.1
+  title: ""
+  date: 2024-05-03T13:53:55.446Z
+- commits:
     - subject: Add palette colors for categories
       hash: 397886a1aebfa05cf3d7187d8fdef90cef46b18b
       body: >
