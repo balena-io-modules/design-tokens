@@ -1,4 +1,15 @@
 - commits:
+    - subject: Darken background color
+      hash: b80397f0b0766b0e7837e02e1e4ae0e22fde88dd
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Jonathan Berger
+  version: 0.7.0
+  title: ""
+  date: 2024-05-14T08:50:27.464Z
+- commits:
     - subject: Decrease badge font-weight
       hash: 76676237672a4ff16352f7decccda321eebc1893
       body: ""
