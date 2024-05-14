@@ -563,15 +563,16 @@
         },
         "teal": {
           "type": "color",
-          "value": "{color.palette.teal.900}"
+          "value": "{color.palette.teal.1000}"
         },
         "purple": {
           "type": "color",
-          "value": "{color.palette.purple.900}"
+          "value": "{color.palette.purple.1000}"
         },
         "yellow": {
+          "description": "We're using orange.1000 for better contrast ratio",
           "type": "color",
-          "value": "{color.palette.yellow.1000}"
+          "value": "{color.palette.orange.1000}"
         }
       }
     },
@@ -667,7 +668,7 @@
         "blue": {
           "_": {
             "type": "color",
-            "value": "{color.palette.blue.50}"
+            "value": "{color.palette.blue.75}"
           },
           "strong": {
             "type": "color",
@@ -677,7 +678,7 @@
         "green": {
           "_": {
             "type": "color",
-            "value": "{color.palette.green.50}"
+            "value": "{color.palette.green.75}"
           },
           "strong": {
             "type": "color",
@@ -687,7 +688,7 @@
         "orange": {
           "_": {
             "type": "color",
-            "value": "{color.palette.orange.50}"
+            "value": "{color.palette.orange.75}"
           },
           "strong": {
             "type": "color",
@@ -697,7 +698,7 @@
         "red": {
           "_": {
             "type": "color",
-            "value": "{color.palette.red.50}"
+            "value": "{color.palette.red.75}"
           },
           "strong": {
             "type": "color",
@@ -707,7 +708,7 @@
         "neutral": {
           "_": {
             "type": "color",
-            "value": "{color.palette.neutral.75}"
+            "value": "{color.palette.neutral.100}"
           },
           "strong": {
             "type": "color",
@@ -717,7 +718,7 @@
         "teal": {
           "_": {
             "type": "color",
-            "value": "{color.palette.teal.50}"
+            "value": "{color.palette.teal.75}"
           },
           "strong": {
             "type": "color",
@@ -727,7 +728,7 @@
         "purple": {
           "_": {
             "type": "color",
-            "value": "{color.palette.purple.50}"
+            "value": "{color.palette.purple.75}"
           },
           "strong": {
             "type": "color",
@@ -737,7 +738,7 @@
         "yellow": {
           "_": {
             "type": "color",
-            "value": "{color.palette.yellow.50}"
+            "value": "{color.palette.yellow.75}"
           },
           "strong": {
             "type": "color",
@@ -813,7 +814,7 @@
         "blue": {
           "_": {
             "type": "color",
-            "value": "{color.palette.blue.200}"
+            "value": "{color.palette.blue.300}"
           },
           "strong": {
             "type": "color",
@@ -823,7 +824,7 @@
         "green": {
           "_": {
             "type": "color",
-            "value": "{color.palette.green.200}"
+            "value": "{color.palette.green.300}"
           },
           "strong": {
             "type": "color",
@@ -833,7 +834,7 @@
         "orange": {
           "_": {
             "type": "color",
-            "value": "{color.palette.orange.200}"
+            "value": "{color.palette.orange.300}"
           },
           "strong": {
             "type": "color",
@@ -843,7 +844,7 @@
         "red": {
           "_": {
             "type": "color",
-            "value": "{color.palette.red.200}"
+            "value": "{color.palette.red.300}"
           },
           "strong": {
             "type": "color",
@@ -853,7 +854,7 @@
         "neutral": {
           "_": {
             "type": "color",
-            "value": "{color.palette.neutral.200}"
+            "value": "{color.palette.neutral.300}"
           },
           "strong": {
             "type": "color",
@@ -863,7 +864,7 @@
         "teal": {
           "_": {
             "type": "color",
-            "value": "{color.palette.teal.200}"
+            "value": "{color.palette.teal.300}"
           },
           "strong": {
             "type": "color",
@@ -1783,7 +1784,7 @@
         },
         "fontWeight": {
           "type": "number",
-          "value": 500
+          "value": 400
         },
         "fontStyle": {
           "type": "string",
@@ -1817,3 +1818,4 @@
     }
   }
 }
+
