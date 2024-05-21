@@ -504,12 +504,16 @@
         "value": "{color.text.palette.neutral}"
       },
       "subtle": {
+        "description": "text/palette/neutral with transparency",
         "type": "color",
-        "value": "{color.palette.neutral.600}"
+        "value": "#23445e99",
+        "blendMode": "normal"
       },
       "subtlest": {
+        "description": "text/palette/neutral with transparency",
         "type": "color",
-        "value": "{color.palette.neutral.100}"
+        "value": "#23445e66",
+        "blendMode": "normal"
       },
       "inverse": {
         "type": "color",
@@ -1818,4 +1822,3 @@
     }
   }
 }
-
