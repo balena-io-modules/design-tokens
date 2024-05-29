@@ -1,4 +1,15 @@
 - commits:
+    - subject: Fix line height and font weight for some typography tokens
+      hash: 32dd0849765ab700f8399157fdf9d334899c3176
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Jonathan Berger
+  version: 0.7.2
+  title: ""
+  date: 2024-05-29T12:51:05.136Z
+- commits:
     - subject: Fix subtle and subtlest text colors
       hash: 92f2bd8a6325e2d9f18f862329d5581ad973871b
       body: ""
