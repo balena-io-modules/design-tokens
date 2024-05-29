@@ -1083,7 +1083,7 @@
       },
       "fontWeight": {
         "type": "number",
-        "value": 600
+        "value": 400
       },
       "fontStyle": {
         "type": "string",
@@ -1099,7 +1099,7 @@
       },
       "lineHeight": {
         "type": "dimension",
-        "value": 14
+        "value": 16.5
       },
       "paragraphIndent": {
         "type": "dimension",
@@ -1426,7 +1426,7 @@
         },
         "lineHeight": {
           "type": "dimension",
-          "value": 16
+          "value": 24
         },
         "paragraphIndent": {
           "type": "dimension",
@@ -1472,7 +1472,7 @@
         },
         "lineHeight": {
           "type": "dimension",
-          "value": 14
+          "value": 21
         },
         "paragraphIndent": {
           "type": "dimension",
