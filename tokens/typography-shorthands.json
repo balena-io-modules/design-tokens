@@ -54,6 +54,11 @@
 				"shorthand": {
 					"value": "{typography.code.md.fontWeight} {typography.code.md.fontSize}/{typography.code.md.lineHeight} {typography.fontfamily.code}"
 				}
+			},
+			"sm": {
+				"shorthand": {
+					"value": "{typography.code.sm.fontWeight} {typography.code.sm.fontSize}/{typography.code.sm.lineHeight} {typography.fontfamily.code}"
+				}
 			}
 		},
 		"components":  {

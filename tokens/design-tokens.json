@@ -1486,6 +1486,52 @@
           "type": "string",
           "value": "none"
         }
+      },
+      "sm": {
+        "fontSize": {
+          "type": "dimension",
+          "value": 12
+        },
+        "textDecoration": {
+          "type": "string",
+          "value": "none"
+        },
+        "fontFamily": {
+          "type": "string",
+          "value": "Ubuntu Mono"
+        },
+        "fontWeight": {
+          "type": "number",
+          "value": 400
+        },
+        "fontStyle": {
+          "type": "string",
+          "value": "normal"
+        },
+        "fontStretch": {
+          "type": "string",
+          "value": "normal"
+        },
+        "letterSpacing": {
+          "type": "dimension",
+          "value": 0
+        },
+        "lineHeight": {
+          "type": "dimension",
+          "value": 18
+        },
+        "paragraphIndent": {
+          "type": "dimension",
+          "value": 0
+        },
+        "paragraphSpacing": {
+          "type": "dimension",
+          "value": 8
+        },
+        "textCase": {
+          "type": "string",
+          "value": "none"
+        }
       }
     },
     "icon": {
@@ -1819,6 +1865,36 @@
           "value": "uppercase"
         }
       }
+    }
+  },
+  "spacing": {
+    "0": {
+      "type": "dimension",
+      "value": 0
+    },
+    "1": {
+      "type": "dimension",
+      "value": 4
+    },
+    "2": {
+      "type": "dimension",
+      "value": 8
+    },
+    "3": {
+      "type": "dimension",
+      "value": 16
+    },
+    "4": {
+      "type": "dimension",
+      "value": 32
+    },
+    "5": {
+      "type": "dimension",
+      "value": 64
+    },
+    "6": {
+      "type": "dimension",
+      "value": 128
     }
   }
 }
