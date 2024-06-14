@@ -1,4 +1,15 @@
 - commits:
+    - subject: Add `codeSm` and spacing tokens
+      hash: 1a0aefa91790b64d223ba5204dc6f6a9118be5f0
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Jonathan Berger
+  version: 0.8.0
+  title: ""
+  date: 2024-06-14T13:42:30.137Z
+- commits:
     - subject: Fix line height and font weight for some typography tokens
       hash: 32dd0849765ab700f8399157fdf9d334899c3176
       body: ""
