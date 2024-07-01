@@ -1,6 +1,6 @@
 {
   "name": "@balena/design-tokens",
-  "version": "0.8.0",
+  "version": "0.9.0",
   "main": "build/js/tokens.js",
   "module": "build/js/tokens.js",
   "types": "build/js/tokens.d.ts",
@@ -36,6 +36,6 @@
     "vitest": "^1.2.2"
   },
   "versionist": {
-    "publishedAt": "2024-06-14T13:42:30.193Z"
+    "publishedAt": "2024-07-01T12:09:58.176Z"
   }
 }
