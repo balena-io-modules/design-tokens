@@ -1,4 +1,24 @@
 {
+  "shape": {
+    "border_radius": {
+      "full": {
+        "type": "dimension",
+        "value": 48
+      },
+      "sm": {
+        "type": "dimension",
+        "value": 4
+      },
+      "md": {
+        "type": "dimension",
+        "value": 8
+      },
+      "lg": {
+        "type": "dimension",
+        "value": 16
+      }
+    }
+  },
   "color": {
     "palette": {
       "neutral": {
@@ -758,7 +778,7 @@
       },
       "subtle": {
         "type": "color",
-        "value": "{color.palette.neutral.75}"
+        "value": "{color.palette.neutral.100}"
       },
       "strong": {
         "type": "color",
