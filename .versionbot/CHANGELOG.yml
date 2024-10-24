@@ -1,4 +1,15 @@
 - commits:
+    - subject: Add hover and active colors for backgrounds
+      hash: cdd169d2d1a45392b8ef7fff7261e78525fed8ac
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Jonathan Berger
+  version: 0.10.0
+  title: ""
+  date: 2024-10-24T15:11:23.688Z
+- commits:
     - subject: Darken bg color
       hash: aa25c6ada592cd2d757c749d8bc8fffaeff3353d
       body: ""
