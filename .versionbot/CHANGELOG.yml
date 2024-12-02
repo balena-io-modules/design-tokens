@@ -1,4 +1,15 @@
 - commits:
+    - subject: Add tokens for table colors
+      hash: d48f5e560693fafe3f256155c97062819dd856d6
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Jonathan Berger
+  version: 0.11.0
+  title: ""
+  date: 2024-12-02T19:25:06.835Z
+- commits:
     - subject: Add hover and active colors for backgrounds
       hash: cdd169d2d1a45392b8ef7fff7261e78525fed8ac
       body: ""
