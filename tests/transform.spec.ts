@@ -1,5 +1,5 @@
 import { expect, test } from 'vitest';
-import { flattenDefaultTokens } from '../scripts/transform';
+import { flattenDefaultTokens, pxToBaseSize } from '../scripts/transform';
 import { TransformedToken } from 'style-dictionary';
 
 const sampleTokens: TransformedToken[] = [
@@ -63,4 +63,6 @@ test('Flatten default tokens', () => {
 			value: 'number',
 		},
 	});
+
+	expect(pxToBaseSize(40)).toEqual('2.857');
 });

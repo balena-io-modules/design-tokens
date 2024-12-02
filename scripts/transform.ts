@@ -138,8 +138,8 @@ function addTokenToObject(
 	return obj;
 }
 
-function pxToBaseSize(value: number, decimals = 3) {
-	return (value / BASE_FONT_SIZE).toLocaleString(undefined, {
+export function pxToBaseSize(value: number, decimals = 3) {
+	return (value / BASE_FONT_SIZE).toLocaleString('en', {
 		maximumFractionDigits: decimals,
 	});
 }
