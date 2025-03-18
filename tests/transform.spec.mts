@@ -1,6 +1,7 @@
 import { expect, test } from 'vitest';
-import { flattenDefaultTokens, pxToBaseSize } from '../scripts/transform';
+import { flattenDefaultTokens, pxToBaseSize } from '../scripts/transform.mts';
 import { TransformedToken } from 'style-dictionary';
+import { DesignToken } from 'style-dictionary/types';
 
 const sampleTokens: TransformedToken[] = [
 	{
@@ -8,7 +9,7 @@ const sampleTokens: TransformedToken[] = [
 		path: ['color', 'bg', '_'],
 		value: '#ffffff',
 		isSource: false,
-		original: null,
+		original: undefined as unknown as DesignToken,
 		filePath: '',
 	},
 	{
@@ -16,7 +17,7 @@ const sampleTokens: TransformedToken[] = [
 		path: ['color', 'bg', 'subtle'],
 		value: '#eeeeee',
 		isSource: false,
-		original: null,
+		original: undefined as unknown as DesignToken,
 		filePath: '',
 	},
 	{
@@ -24,7 +25,7 @@ const sampleTokens: TransformedToken[] = [
 		path: ['spacing', '_'],
 		value: 16,
 		isSource: false,
-		original: null,
+		original: undefined as unknown as DesignToken,
 		filePath: '',
 	},
 ];

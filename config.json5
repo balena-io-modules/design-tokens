@@ -1,57 +1,66 @@
 {
-	source: ['tokens/**/*.json'],
-	platforms: {
-		css: {
-			transforms: [
-				'attribute/cti',
-				'name/cti/kebab',
-				'color/css',
-				'custom/pxToRem',
-			],
-			buildPath: 'build/css/',
-			options: {
-				outputReferences: true,
-			},
-			files: [
-				{
-					destination: 'tokens.css',
-					filter: 'remove-useless-tokens',
-					format: 'css/variables',
-				},
-			],
-		},
-		js: {
-			transforms: [
-				'attribute/cti',
-				'name/cti/pascal',
-				'size/rem',
-				'color/css',
-				'custom/pxToRem',
-			],
-			buildPath: 'build/js/',
-			files: [
-				{
-					destination: 'tokens.js',
-					filter: 'remove-useless-tokens',
-					format: 'javascript/esm',
-				},
-				{
-					destination: 'tokens.d.ts',
-					filter: 'remove-useless-tokens',
-					format: 'typescript/esm-declarations',
-				},
-			],
-		},
-		json: {
-			transformGroup: 'js',
-			buildPath: 'build/json/',
-			files: [
-				{
-					destination: 'tokens.json',
-					filter: 'remove-useless-tokens',
-					format: 'json/flat-with-references',
-				},
-			],
-		},
-	},
+  source: ['tokens/**/*.json'],
+  platforms: {
+    css: {
+      transforms: [
+        'attribute/cti',
+        'name/kebab',
+        'color/css',
+        'custom/pxToRem',
+      ],
+      buildPath: 'build/css/',
+      options: {
+        outputReferences: true,
+      },
+      files: [
+        {
+          destination: 'tokens.css',
+          filter: 'remove-useless-tokens',
+          format: 'css/variables',
+        },
+      ],
+    },
+    js: {
+      transforms: [
+        'attribute/cti',
+        'name/pascal',
+        'color/css',
+        'custom/pxToRem',
+      ],
+      buildPath: 'build/js/',
+      files: [
+        {
+          destination: 'tokens.js',
+          filter: 'remove-useless-tokens',
+          format: 'javascript/esm',
+        },
+        {
+          destination: 'tokens.d.ts',
+          filter: 'remove-useless-tokens',
+          format: 'typescript/esm-declarations',
+        },
+        {
+          destination: 'mui-theme-tokens.js',
+          filter: 'remove-useless-tokens',
+          format: 'javascript/mui-theme',
+        },
+        {
+          destination: 'mui-theme-tokens.d.ts',
+          filter: 'remove-useless-tokens',
+          format: 'typescript/mui-theme-declaration',
+        },
+      ],
+    },
+    json: {
+      transformGroup: 'js',
+      buildPath: 'build/json/',
+      files: [
+        {
+          destination: 'tokens.json',
+          filter: 'remove-useless-tokens',
+          format: 'json/flat-with-references',
+        },
+      ],
+    },
+  },
 }

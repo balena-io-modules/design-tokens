@@ -1,15 +1,12 @@
 {
 	"compilerOptions": {
-		"module": "commonjs",
-		"moduleResolution": "node",
-		"target": "es2015",
+		"module": "esnext",
+		"moduleResolution": "nodenext",
+		"target": "es2017",
+		"allowImportingTsExtensions": true,
 		"esModuleInterop": true,
 		"outDir": "build",
-		"lib": [
-			"es2019",
-			"dom",
-			"dom.iterable"
-		],
+		"lib": ["es2019", "dom", "dom.iterable"],
 		"noUnusedLocals": true,
 		"noUnusedParameters": true,
 		"preserveConstEnums": true,
@@ -19,8 +16,5 @@
 		"allowJs": true,
 		"baseUrl": ".",
 		"importHelpers": true
-	},
-	"ts-node": {
-		"transpileOnly": true
-	},
+	}
 }

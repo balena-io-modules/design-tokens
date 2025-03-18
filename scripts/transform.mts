@@ -1,15 +1,13 @@
-#!/usr/bin/env node
+import { fileHeader, getTypeScriptType } from 'style-dictionary/utils';
 
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const StyleDictionary = require('style-dictionary').extend('config.json5');
-
-import {
+import StyleDictionary, {
 	Dictionary,
 	File,
 	TransformedToken,
 	TransformedTokens,
 } from 'style-dictionary';
-const { fileHeader, getTypeScriptType } = StyleDictionary.formatHelpers;
+
+const sd = new StyleDictionary('config.json5');
 
 const USELESS_TOKENS = [
 	'textDecoration',
@@ -25,10 +23,16 @@ const BASE_FONT_SIZE = 14;
 
 StyleDictionary.registerFormat({
 	name: 'javascript/esm',
-	formatter: ({ dictionary, file }: { dictionary: Dictionary; file: File }) => {
+	format: async ({
+		dictionary,
+		file,
+	}: {
+		dictionary: Dictionary;
+		file: File;
+	}) => {
 		const newTokens = flattenDefaultTokens(dictionary.allTokens);
 
-		let result = fileHeader({ file });
+		let result = await fileHeader({ file });
 
 		// split the tokens into categories so they're exported separately
 		Object.keys(newTokens).forEach((tokenKey) => {
@@ -48,10 +52,16 @@ StyleDictionary.registerFormat({
 
 StyleDictionary.registerFormat({
 	name: 'typescript/esm-declarations',
-	formatter: ({ dictionary, file }: { dictionary: Dictionary; file: File }) => {
+	format: async ({
+		dictionary,
+		file,
+	}: {
+		dictionary: Dictionary;
+		file: File;
+	}) => {
 		const newTokens = flattenDefaultTokens(dictionary.allTokens, true);
 
-		let result = fileHeader({ file });
+		let result = await fileHeader({ file });
 
 		// split the tokens into categories so they're exported separately
 		Object.keys(newTokens).forEach((tokenKey) => {
@@ -69,15 +79,15 @@ StyleDictionary.registerFormat({
 
 StyleDictionary.registerFormat({
 	name: 'json/flat-with-references',
-	formatter: function ({ dictionary }) {
+	format: async function ({ dictionary }) {
 		return JSON.stringify(dictionary.allTokens, null, 2);
 	},
 });
 
 StyleDictionary.registerFilter({
 	name: 'remove-useless-tokens',
-	matcher: (token: TransformedToken) => {
-		if (token.attributes.category !== 'typography') {
+	filter: (token: TransformedToken) => {
+		if (token.attributes?.category !== 'typography') {
 			return true;
 		}
 
@@ -89,10 +99,10 @@ StyleDictionary.registerFilter({
 StyleDictionary.registerTransform({
 	name: 'custom/pxToRem',
 	type: 'value',
-	matcher: (token: TransformedToken) =>
+	filter: (token: TransformedToken) =>
 		token.path.slice(-1)[0] === 'fontSize' ||
 		token.path.slice(-1)[0] === 'lineHeight',
-	transformer: (token: TransformedToken) => {
+	transform: (token: TransformedToken) => {
 		return `${pxToBaseSize(token.value)}rem`;
 	},
 });
@@ -144,4 +154,4 @@ export function pxToBaseSize(value: number, decimals = 3) {
 	});
 }
 
-StyleDictionary.buildAllPlatforms();
+await sd.buildAllPlatforms();
