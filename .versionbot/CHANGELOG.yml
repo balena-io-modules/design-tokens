@@ -1,4 +1,23 @@
 - commits:
+    - subject: Add flattened token object for MUI themes
+      hash: a2354c0a390eac1fc08115ad039ec9dae14f46f6
+      body: ""
+      footer:
+        Change-type: minor
+        change-type: minor
+      author: Jonathan Berger
+    - subject: Migrate to Style Dictionary v4
+      hash: 4a67180dac790b78fc2ff522245d196b73e41b5a
+      body: |
+        See https://v4.styledictionary.com/version-4/migration/
+      footer:
+        Change-type: patch
+        change-type: patch
+      author: Jonathan Berger
+  version: 0.12.0
+  title: ""
+  date: 2025-03-20T20:01:46.530Z
+- commits:
     - subject: Add tokens for table colors
       hash: d48f5e560693fafe3f256155c97062819dd856d6
       body: ""
