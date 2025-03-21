@@ -39,16 +39,6 @@
           filter: 'remove-useless-tokens',
           format: 'typescript/esm-declarations',
         },
-        {
-          destination: 'mui-theme-tokens.js',
-          filter: 'remove-useless-tokens',
-          format: 'javascript/mui-theme',
-        },
-        {
-          destination: 'mui-theme-tokens.d.ts',
-          filter: 'remove-useless-tokens',
-          format: 'typescript/mui-theme-declaration',
-        },
       ],
     },
     json: {
