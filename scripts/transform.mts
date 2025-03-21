@@ -63,6 +63,13 @@ StyleDictionary.registerFormat({
 
 		let result = await fileHeader({ file });
 
+		// Types
+		Object.keys(newTokens).forEach((tokenKey) => {
+			result += `export type ${capitalize(tokenKey)}Tokens = {
+					[K in keyof typeof ${tokenKey}]: (typeof ${tokenKey})[K];
+				};\n\n`;
+		});
+
 		// split the tokens into categories so they're exported separately
 		Object.keys(newTokens).forEach((tokenKey) => {
 			result += `export const ${tokenKey}: ${JSON.stringify(
