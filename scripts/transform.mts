@@ -19,6 +19,9 @@ const USELESS_TOKENS = [
 	'paragraphSpacing',
 ];
 
+// We use a prefix to differentiate our tokens from MUI's ones
+const TOKEN_PREFIX = 'b';
+
 const BASE_FONT_SIZE = 14;
 
 StyleDictionary.registerFormat({
@@ -210,10 +213,11 @@ export function flattenForMUI(tokens: TransformedToken[]) {
 
 		// Remove the default paths (`color.bg._` becomes `color.bg`)
 		const filteredPath = token.path.filter((path) => path !== '_');
+		const tokenName = `${TOKEN_PREFIX}-${filteredPath.slice(1).join('-')}`;
 
 		newTokens[category] ??= {};
 
-		newTokens[category][filteredPath.slice(1).join('-')] = token.value;
+		newTokens[category][tokenName] = token.value;
 	});
 
 	return newTokens;
