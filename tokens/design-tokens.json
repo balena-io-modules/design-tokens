@@ -16,6 +16,10 @@
       "lg": {
         "type": "dimension",
         "value": 16
+      },
+      "xs": {
+        "type": "dimension",
+        "value": 2
       }
     }
   },
