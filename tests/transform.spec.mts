@@ -34,16 +34,13 @@ test('Flatten default tokens', () => {
 	expect(flattenDefaultTokens(sampleTokens)).toEqual({
 		color: {
 			bg: {
-				name: 'Background',
 				value: '#ffffff',
 				subtle: {
-					name: 'BackgroundSubtle',
 					value: '#eeeeee',
 				},
 			},
 		},
 		spacing: {
-			name: 'Spacing',
 			value: 16,
 		},
 	});
@@ -51,16 +48,13 @@ test('Flatten default tokens', () => {
 	expect(flattenDefaultTokens(sampleTokens, true)).toEqual({
 		color: {
 			bg: {
-				name: 'string',
 				value: 'string',
 				subtle: {
-					name: 'string',
 					value: 'string',
 				},
 			},
 		},
 		spacing: {
-			name: 'string',
 			value: 'number',
 		},
 	});

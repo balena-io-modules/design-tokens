@@ -151,7 +151,6 @@ function addTokenToObject(
 			currentObj.value = isTSDeclaration
 				? getTypeScriptType(token.value)
 				: token.value;
-			currentObj.name = isTSDeclaration ? 'string' : token.name;
 		}
 	}
 
