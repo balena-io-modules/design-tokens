@@ -71,7 +71,17 @@ StyleDictionary.registerFormat({
 		});
 
 		// Flat tokens
-		result += `export type FlatTokens = ${dictionary.allTokens.map((token) => "'" + token.path.filter((pathPart) => pathPart !== '_').join('.') + "'").join(' | ')}\n\n`;
+		result += `export type FlatTokens = ${dictionary.allTokens
+			.map(
+				(token) =>
+					"'" +
+					token.path
+						.filter((pathPart) => pathPart !== '_')
+						.map(snakeCaseToCamelCase)
+						.join('.') +
+					"'",
+			)
+			.join(' | ')}\n\n`;
 
 		// split the tokens into categories so they're exported separately
 		Object.keys(newTokens).forEach((tokenKey) => {
@@ -143,9 +153,10 @@ function addTokenToObject(
 	let currentObj: TransformedTokens | TransformedToken = obj || {};
 
 	for (let i = 0; i < path.length; i++) {
-		currentObj[path[i]] = currentObj[path[i]] || {};
+		const p = snakeCaseToCamelCase(path[i]);
+		currentObj[p] ??= {};
 
-		currentObj = currentObj[path[i]];
+		currentObj = currentObj[p];
 
 		if (i === path.length - 1) {
 			currentObj.value = isTSDeclaration
@@ -165,5 +176,8 @@ export function pxToBaseSize(value: number, decimals = 3) {
 
 const capitalize = <T extends string>(s: T) =>
 	(s[0].toUpperCase() + s.slice(1)) as Capitalize<typeof s>;
+
+const snakeCaseToCamelCase = (s: string) =>
+	s.replace(/(_\w)/g, (k) => k[1].toUpperCase());
 
 await sd.buildAllPlatforms();

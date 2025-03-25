@@ -1193,7 +1193,7 @@
         "value": 600
       }
     },
-    "fontfamily": {
+    "font_family": {
       "body": {
         "type": "string",
         "value": "\"Source Sans Pro\",Helvetica,sans-serif"
