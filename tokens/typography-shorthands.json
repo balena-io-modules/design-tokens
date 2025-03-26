@@ -2,69 +2,69 @@
 	"typography": {
 		"display": {
 			"shorthand": {
-				"value": "{typography.display.fontWeight} {typography.display.fontSize}/{typography.display.lineHeight} {typography.fontfamily.body}"
+				"value": "{typography.display.fontWeight} {typography.display.fontSize}/{typography.display.lineHeight} {typography.font_family.body}"
 			}
 		},
 		"title": {
 			"lg": {
 				"shorthand": {
-					"value": "{typography.title.lg.fontWeight} {typography.title.lg.fontSize}/{typography.title.lg.lineHeight} {typography.fontfamily.body}"
+					"value": "{typography.title.lg.fontWeight} {typography.title.lg.fontSize}/{typography.title.lg.lineHeight} {typography.font_family.body}"
 				}
 			},
 			"md": {
 				"shorthand": {
-					"value": "{typography.title.md.fontWeight} {typography.title.md.fontSize}/{typography.title.md.lineHeight} {typography.fontfamily.body}"
+					"value": "{typography.title.md.fontWeight} {typography.title.md.fontSize}/{typography.title.md.lineHeight} {typography.font_family.body}"
 				}
 			},
 			"sm": {
 				"shorthand": {
-					"value": "{typography.title.sm.fontWeight} {typography.title.sm.fontSize}/{typography.title.sm.lineHeight} {typography.fontfamily.body}"
+					"value": "{typography.title.sm.fontWeight} {typography.title.sm.fontSize}/{typography.title.sm.lineHeight} {typography.font_family.body}"
 				}
 			}
 		},
 		"body": {
 			"lg": {
 				"shorthand": {
-					"value": "{typography.body.lg.fontWeight} {typography.body.lg.fontSize}/{typography.body.lg.lineHeight} {typography.fontfamily.body}"
+					"value": "{typography.body.lg.fontWeight} {typography.body.lg.fontSize}/{typography.body.lg.lineHeight} {typography.font_family.body}"
 				}
 			},
 			"md": {
 				"shorthand": {
-					"value": "{typography.body.md.fontWeight} {typography.body.md.fontSize}/{typography.body.md.lineHeight} {typography.fontfamily.body}"
+					"value": "{typography.body.md.fontWeight} {typography.body.md.fontSize}/{typography.body.md.lineHeight} {typography.font_family.body}"
 				}
 			},
 			"sm": {
 				"shorthand": {
-					"value": "{typography.body.sm.fontWeight} {typography.body.sm.fontSize}/{typography.body.sm.lineHeight} {typography.fontfamily.body}"
+					"value": "{typography.body.sm.fontWeight} {typography.body.sm.fontSize}/{typography.body.sm.lineHeight} {typography.font_family.body}"
 				}
 			}
 		},
 		"overline": {
 			"shorthand": {
-				"value": "{typography.overline.fontWeight} {typography.overline.fontSize}/{typography.overline.lineHeight} {typography.fontfamily.body}"
+				"value": "{typography.overline.fontWeight} {typography.overline.fontSize}/{typography.overline.lineHeight} {typography.font_family.body}"
 			}
 		},
 		"code": {
 			"lg": {
 				"shorthand": {
-					"value": "{typography.code.lg.fontWeight} {typography.code.lg.fontSize}/{typography.code.lg.lineHeight} {typography.fontfamily.code}"
+					"value": "{typography.code.lg.fontWeight} {typography.code.lg.fontSize}/{typography.code.lg.lineHeight} {typography.font_family.code}"
 				}
 			},
 			"md": {
 				"shorthand": {
-					"value": "{typography.code.md.fontWeight} {typography.code.md.fontSize}/{typography.code.md.lineHeight} {typography.fontfamily.code}"
+					"value": "{typography.code.md.fontWeight} {typography.code.md.fontSize}/{typography.code.md.lineHeight} {typography.font_family.code}"
 				}
 			},
 			"sm": {
 				"shorthand": {
-					"value": "{typography.code.sm.fontWeight} {typography.code.sm.fontSize}/{typography.code.sm.lineHeight} {typography.fontfamily.code}"
+					"value": "{typography.code.sm.fontWeight} {typography.code.sm.fontSize}/{typography.code.sm.lineHeight} {typography.font_family.code}"
 				}
 			}
 		},
 		"components":  {
 			"badge": {
 				"shorthand": {
-					"value": "{typography.components.badge.fontWeight} {typography.components.badge.fontSize}/{typography.components.badge.lineHeight} {typography.fontfamily.body}"
+					"value": "{typography.components.badge.fontWeight} {typography.components.badge.fontSize}/{typography.components.badge.lineHeight} {typography.font_family.body}"
 				}
 			}
 		}

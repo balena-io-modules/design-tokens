@@ -16,6 +16,10 @@
       "lg": {
         "type": "dimension",
         "value": 16
+      },
+      "xs": {
+        "type": "dimension",
+        "value": 2
       }
     }
   },
@@ -1193,7 +1197,7 @@
         "value": 600
       }
     },
-    "fontfamily": {
+    "font_family": {
       "body": {
         "type": "string",
         "value": "\"Source Sans Pro\",Helvetica,sans-serif"

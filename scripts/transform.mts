@@ -63,6 +63,26 @@ StyleDictionary.registerFormat({
 
 		let result = await fileHeader({ file });
 
+		// Types
+		Object.keys(newTokens).forEach((tokenKey) => {
+			result += `export type ${capitalize(tokenKey)}Tokens = {
+					[K in keyof typeof ${tokenKey}]: (typeof ${tokenKey})[K];
+				};\n\n`;
+		});
+
+		// Flat tokens
+		result += `export type FlatTokens = ${dictionary.allTokens
+			.map(
+				(token) =>
+					"'" +
+					token.path
+						.filter((pathPart) => pathPart !== '_')
+						.map(snakeCaseToCamelCase)
+						.join('.') +
+					"'",
+			)
+			.join(' | ')}\n\n`;
+
 		// split the tokens into categories so they're exported separately
 		Object.keys(newTokens).forEach((tokenKey) => {
 			result += `export const ${tokenKey}: ${JSON.stringify(
@@ -74,78 +94,6 @@ StyleDictionary.registerFormat({
 
 		// TODO find a smarter way to remove quotes, this is fragile.
 		return result.replace(/"/g, '');
-	},
-});
-
-/**
- * Flat object of variables to use in MUI color attributes.
- *
- * The difference with the `javascript/esm` transform is that we flatten the
- * objects using dashes as separators. The reason we do that is that we want
- * to remove the `.value` suffix for a more intuitive usage.
- *
- * Example use: `<MuiButton bgcolor="bg-accent" />`
- */
-StyleDictionary.registerFormat({
-	name: 'javascript/mui-theme',
-	format: async ({
-		dictionary,
-		file,
-	}: {
-		dictionary: Dictionary;
-		file: File;
-	}) => {
-		const newTokens = flattenForMUI(dictionary.allTokens);
-
-		let result = await fileHeader({ file });
-
-		Object.keys(newTokens).forEach((tokenKey) => {
-			result += `export const ${tokenKey} = ${JSON.stringify(
-				newTokens[tokenKey],
-				null,
-				2,
-			)};\n\n`;
-		});
-
-		// Add a default export with all the token categories
-		result += `export default {\n${Object.keys(newTokens).join(',\n')}};`;
-
-		return result;
-	},
-});
-
-StyleDictionary.registerFormat({
-	name: 'typescript/mui-theme-declaration',
-	format: async ({
-		dictionary,
-		file,
-	}: {
-		dictionary: Dictionary;
-		file: File;
-	}) => {
-		const newTokens = flattenForMUI(dictionary.allTokens);
-
-		let result = await fileHeader({ file });
-
-		// Types
-		Object.keys(newTokens).forEach((tokenKey) => {
-			result += `export type ${capitalize(tokenKey)}TokensType = {
-					[K in keyof typeof ${tokenKey}]: (typeof ${tokenKey})[K];
-				};`;
-		});
-
-		Object.keys(newTokens).forEach((tokenKey) => {
-			result += `export const ${tokenKey} = {${Object.keys(
-				newTokens[tokenKey],
-			).map((token) => {
-				return `'${token}': ${getTypeScriptType(newTokens[tokenKey][token])}`;
-			})}};`;
-		});
-
-		// Add a default export with all the token categories
-		// result += `export default {\n${Object.keys(newTokens).join(',\n')}};`;
-
-		return result;
 	},
 });
 
@@ -193,32 +141,6 @@ export function flattenDefaultTokens(
 	}, {});
 }
 
-type FlatTokens = {
-	[key: string]: { [key: string]: string };
-};
-
-export function flattenForMUI(tokens: TransformedToken[]) {
-	const newTokens: FlatTokens = {};
-
-	tokens.forEach((token) => {
-		const category = token.path[0];
-
-		// Filter out the palette, we don't want to expose it in MUI attributes
-		if (category === 'color' && token.path.includes('palette')) {
-			return;
-		}
-
-		// Remove the default paths (`color.bg._` becomes `color.bg`)
-		const filteredPath = token.path.filter((path) => path !== '_');
-
-		newTokens[category] ??= {};
-
-		newTokens[category][filteredPath.slice(1).join('-')] = token.value;
-	});
-
-	return newTokens;
-}
-
 /**
  * Add token to the object based on the path
  */
@@ -231,15 +153,15 @@ function addTokenToObject(
 	let currentObj: TransformedTokens | TransformedToken = obj || {};
 
 	for (let i = 0; i < path.length; i++) {
-		currentObj[path[i]] = currentObj[path[i]] || {};
+		const p = snakeCaseToCamelCase(path[i]);
+		currentObj[p] ??= {};
 
-		currentObj = currentObj[path[i]];
+		currentObj = currentObj[p];
 
 		if (i === path.length - 1) {
 			currentObj.value = isTSDeclaration
 				? getTypeScriptType(token.value)
 				: token.value;
-			currentObj.name = isTSDeclaration ? 'string' : token.name;
 		}
 	}
 
@@ -254,5 +176,8 @@ export function pxToBaseSize(value: number, decimals = 3) {
 
 const capitalize = <T extends string>(s: T) =>
 	(s[0].toUpperCase() + s.slice(1)) as Capitalize<typeof s>;
+
+const snakeCaseToCamelCase = (s: string) =>
+	s.replace(/(_\w)/g, (k) => k[1].toUpperCase());
 
 await sd.buildAllPlatforms();
