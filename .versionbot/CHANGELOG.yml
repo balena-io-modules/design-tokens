@@ -1,4 +1,22 @@
 - commits:
+    - subject: Transform snake_case paths to camelCase
+      hash: 7ea34f91347805609268625ee0d90228f646b02d
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+      author: Jonathan Berger
+    - subject: Remove MUI tokens
+      hash: 977cdbdde5471197c8e5b9d65d7f37e95e66064a
+      body: ""
+      footer:
+        Change-type: major
+        change-type: major
+      author: Jonathan Berger
+  version: 1.0.0
+  title: ""
+  date: 2025-03-26T20:14:37.587Z
+- commits:
     - subject: Add flattened token object for MUI themes
       hash: a2354c0a390eac1fc08115ad039ec9dae14f46f6
       body: ""
