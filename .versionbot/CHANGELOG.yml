@@ -1,4 +1,17 @@
 - commits:
+    - subject: "Add id-token: write permission for NPM OIDC publishing"
+      hash: c935cdb949618daa1d9949927266e5ecab57d85f
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+  version: 1.0.1
+  title: ""
+  date: 2026-02-19T01:57:53.359Z
+- commits:
     - subject: Transform snake_case paths to camelCase
       hash: 7ea34f91347805609268625ee0d90228f646b02d
       body: ""
