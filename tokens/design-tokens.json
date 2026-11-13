@@ -86,6 +86,11 @@
           "value": "#182e40ff",
           "blendMode": "normal"
         },
+        "950": {
+          "type": "color",
+          "value": "#2e2831ff",
+          "blendMode": "normal"
+        },
         "1000": {
           "type": "color",
           "value": "#0a1924ff",
@@ -151,6 +156,11 @@
         "900": {
           "type": "color",
           "value": "#146e00ff",
+          "blendMode": "normal"
+        },
+        "950": {
+          "type": "color",
+          "value": "#115e00ff",
           "blendMode": "normal"
         },
         "1000": {
@@ -220,6 +230,11 @@
           "value": "#bc1723ff",
           "blendMode": "normal"
         },
+        "950": {
+          "type": "color",
+          "value": "#30080cff",
+          "blendMode": "normal"
+        },
         "1000": {
           "type": "color",
           "value": "#8d111aff",
@@ -285,6 +300,11 @@
         "900": {
           "type": "color",
           "value": "#e34e00ff",
+          "blendMode": "normal"
+        },
+        "950": {
+          "type": "color",
+          "value": "#cb4600ff",
           "blendMode": "normal"
         },
         "1000": {
@@ -354,6 +374,11 @@
           "value": "#f57f16ff",
           "blendMode": "normal"
         },
+        "950": {
+          "type": "color",
+          "value": "#e17210ff",
+          "blendMode": "normal"
+        },
         "1000": {
           "type": "color",
           "value": "#cd6509ff",
@@ -419,6 +444,11 @@
         "900": {
           "type": "color",
           "value": "#4d45c4ff",
+          "blendMode": "normal"
+        },
+        "950": {
+          "type": "color",
+          "value": "#1c1431ff",
           "blendMode": "normal"
         },
         "1000": {
@@ -488,6 +518,11 @@
           "value": "#0e5196ff",
           "blendMode": "normal"
         },
+        "950": {
+          "type": "color",
+          "value": "#042733ff",
+          "blendMode": "normal"
+        },
         "1000": {
           "type": "color",
           "value": "#0b3f75ff",
@@ -555,6 +590,11 @@
           "value": "#106359ff",
           "blendMode": "normal"
         },
+        "950": {
+          "type": "color",
+          "value": "#072322ff",
+          "blendMode": "normal"
+        },
         "1000": {
           "type": "color",
           "value": "#0b423bff",
@@ -610,10 +650,34 @@
         "type": "color",
         "value": "{color.text.palette.red}"
       },
-      "code": {
-        "description": "",
-        "type": "color",
-        "value": "{color.text.palette.red}"
+      "components": {
+        "code": {
+          "description": "",
+          "type": "color",
+          "value": "{color.text.palette.red}"
+        },
+        "button": {
+          "primary": {
+            "type": "color",
+            "value": "#ffffffff",
+            "blendMode": "normal"
+          },
+          "secondary": {
+            "type": "color",
+            "value": "#ffffffff",
+            "blendMode": "normal"
+          }
+        },
+        "tag": {
+          "type": "color",
+          "value": "#ffffffff",
+          "blendMode": "normal"
+        },
+        "avatar": {
+          "description": "",
+          "type": "color",
+          "value": "{color.text._}"
+        }
       },
       "palette": {
         "blue": {
@@ -744,10 +808,51 @@
           "value": "{color.bg.palette.red.strong}"
         }
       },
-      "code": {
-        "description": "",
-        "type": "color",
-        "value": "{color.palette.red.50}"
+      "components": {
+        "code": {
+          "description": "",
+          "type": "color",
+          "value": "{color.palette.red.50}"
+        },
+        "table": {
+          "header": {
+            "description": "",
+            "type": "color",
+            "value": "{color.palette.neutral.75}"
+          },
+          "row": {
+            "description": "",
+            "type": "color",
+            "value": "{color.palette.neutral.25}"
+          }
+        },
+        "button": {
+          "primary": {
+            "type": "color",
+            "value": "#ffffffff",
+            "blendMode": "normal"
+          },
+          "secondary": {
+            "type": "color",
+            "value": "#ffffffff",
+            "blendMode": "normal"
+          }
+        },
+        "tag": {
+          "type": "color",
+          "value": "#ffffffff",
+          "blendMode": "normal"
+        },
+        "card": {
+          "description": "",
+          "type": "color",
+          "value": "{color.bg.subtlest}"
+        },
+        "avatar": {
+          "description": "",
+          "type": "color",
+          "value": "{color.bg.subtle}"
+        }
       },
       "overlay": {
         "light": {
@@ -874,17 +979,20 @@
       "_": {
         "description": "",
         "type": "color",
-        "value": "{color.border.palette.neutral._}"
+        "value": "{color.border.palette.neutral._}",
+        "blendMode": "normal"
       },
       "subtle": {
         "description": "",
         "type": "color",
-        "value": "{color.palette.neutral.100}"
+        "value": "{color.palette.neutral.100}",
+        "blendMode": "normal"
       },
       "strong": {
         "description": "",
         "type": "color",
-        "value": "{color.border.palette.neutral.strong}"
+        "value": "{color.border.palette.neutral.strong}",
+        "blendMode": "normal"
       },
       "accent": {
         "_": {
@@ -1043,13 +1151,26 @@
             "value": "{color.palette.yellow.800}"
           }
         }
+      },
+      "components": {
+        "card": {
+          "description": "",
+          "type": "color",
+          "value": "{color.border.subtle}"
+        }
+      },
+      "inverse": {
+        "type": "color",
+        "value": "#ffffffff",
+        "blendMode": "normal"
       }
     },
     "icon": {
       "_": {
         "description": "",
         "type": "color",
-        "value": "{color.icon.palette.neutral}"
+        "value": "{color.icon.palette.neutral}",
+        "blendMode": "normal"
       },
       "subtle": {
         "description": "",
@@ -1132,6 +1253,20 @@
           "type": "color",
           "value": "{color.palette.yellow.700}"
         }
+      },
+      "components": {
+        "button": {
+          "primary": {
+            "type": "color",
+            "value": "#ffffffff",
+            "blendMode": "normal"
+          },
+          "secondary": {
+            "type": "color",
+            "value": "#ffffffff",
+            "blendMode": "normal"
+          }
+        }
       }
     },
     "status": {
@@ -1171,18 +1306,56 @@
         "value": "{color.palette.neutral.75}"
       }
     },
-    "components": {
-      "table": {
-        "header": {
-          "description": "",
-          "type": "color",
-          "value": "{color.palette.neutral.75}"
-        },
-        "row": {
-          "description": "",
-          "type": "color",
-          "value": "{color.palette.neutral.25}"
-        }
+    "brand": {
+      "warmWhite": {
+        "type": "color",
+        "value": "#fbf4eeff",
+        "blendMode": "normal"
+      },
+      "mushroom": {
+        "type": "color",
+        "value": "#e9dcd3ff",
+        "blendMode": "normal"
+      },
+      "astralBlue": {
+        "type": "color",
+        "value": "#042733ff",
+        "blendMode": "normal"
+      },
+      "oliveGreen": {
+        "type": "color",
+        "value": "#4e5814ff",
+        "blendMode": "normal"
+      },
+      "plumBlack": {
+        "type": "color",
+        "value": "#27212aff",
+        "blendMode": "normal"
+      },
+      "palePink": {
+        "type": "color",
+        "value": "#ffcbe3ff",
+        "blendMode": "normal"
+      },
+      "paleYellow": {
+        "type": "color",
+        "value": "#ffffbcff",
+        "blendMode": "normal"
+      },
+      "paleOrange": {
+        "type": "color",
+        "value": "#ffae8bff",
+        "blendMode": "normal"
+      },
+      "paleBlue": {
+        "type": "color",
+        "value": "#c8daffff",
+        "blendMode": "normal"
+      },
+      "orange": {
+        "type": "color",
+        "value": "#ff6e30ff",
+        "blendMode": "normal"
       }
     }
   },
@@ -1218,7 +1391,7 @@
       },
       "fontFamily": {
         "type": "string",
-        "value": "Source Sans 3"
+        "value": "Funnel Sans"
       },
       "fontWeight": {
         "type": "number",
@@ -1264,11 +1437,11 @@
       },
       "fontFamily": {
         "type": "string",
-        "value": "Source Sans 3"
+        "value": "Funnel Sans"
       },
       "fontWeight": {
         "type": "number",
-        "value": 400
+        "value": 500
       },
       "fontStyle": {
         "type": "string",
@@ -1280,7 +1453,7 @@
       },
       "letterSpacing": {
         "type": "dimension",
-        "value": 0
+        "value": 0.88
       },
       "lineHeight": {
         "type": "dimension",
@@ -1311,11 +1484,11 @@
         },
         "fontFamily": {
           "type": "string",
-          "value": "Source Sans 3"
+          "value": "Funnel Sans"
         },
         "fontWeight": {
           "type": "number",
-          "value": 400
+          "value": 500
         },
         "fontStyle": {
           "type": "string",
@@ -1327,7 +1500,7 @@
         },
         "letterSpacing": {
           "type": "dimension",
-          "value": 0
+          "value": 0.48
         },
         "lineHeight": {
           "type": "dimension",
@@ -1357,7 +1530,7 @@
         },
         "fontFamily": {
           "type": "string",
-          "value": "Source Sans 3"
+          "value": "Funnel Sans"
         },
         "fontWeight": {
           "type": "number",
@@ -1403,11 +1576,11 @@
         },
         "fontFamily": {
           "type": "string",
-          "value": "Source Sans 3"
+          "value": "Funnel Sans"
         },
         "fontWeight": {
           "type": "number",
-          "value": 400
+          "value": 500
         },
         "fontStyle": {
           "type": "string",
@@ -1419,7 +1592,7 @@
         },
         "letterSpacing": {
           "type": "dimension",
-          "value": 0
+          "value": 0.18
         },
         "lineHeight": {
           "type": "dimension",
@@ -1451,7 +1624,7 @@
         },
         "fontFamily": {
           "type": "string",
-          "value": "Source Sans 3"
+          "value": "Funnel Sans"
         },
         "fontWeight": {
           "type": "number",
@@ -1497,7 +1670,7 @@
         },
         "fontFamily": {
           "type": "string",
-          "value": "Source Sans 3"
+          "value": "Funnel Sans"
         },
         "fontWeight": {
           "type": "number",
@@ -1543,7 +1716,7 @@
         },
         "fontFamily": {
           "type": "string",
-          "value": "Source Sans 3"
+          "value": "Funnel Sans"
         },
         "fontWeight": {
           "type": "number",
@@ -1576,6 +1749,146 @@
         "textCase": {
           "type": "string",
           "value": "none"
+        }
+      },
+      "strong": {
+        "lg": {
+          "fontSize": {
+            "type": "dimension",
+            "value": 16
+          },
+          "textDecoration": {
+            "type": "string",
+            "value": "none"
+          },
+          "fontFamily": {
+            "type": "string",
+            "value": "Funnel Sans"
+          },
+          "fontWeight": {
+            "type": "number",
+            "value": 600
+          },
+          "fontStyle": {
+            "type": "string",
+            "value": "normal"
+          },
+          "fontStretch": {
+            "type": "string",
+            "value": "normal"
+          },
+          "letterSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "lineHeight": {
+            "type": "dimension",
+            "value": 24
+          },
+          "paragraphIndent": {
+            "type": "dimension",
+            "value": 0
+          },
+          "paragraphSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "textCase": {
+            "type": "string",
+            "value": "none"
+          }
+        },
+        "md": {
+          "fontSize": {
+            "type": "dimension",
+            "value": 14
+          },
+          "textDecoration": {
+            "type": "string",
+            "value": "none"
+          },
+          "fontFamily": {
+            "type": "string",
+            "value": "Funnel Sans"
+          },
+          "fontWeight": {
+            "type": "number",
+            "value": 600
+          },
+          "fontStyle": {
+            "type": "string",
+            "value": "normal"
+          },
+          "fontStretch": {
+            "type": "string",
+            "value": "normal"
+          },
+          "letterSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "lineHeight": {
+            "type": "dimension",
+            "value": 21
+          },
+          "paragraphIndent": {
+            "type": "dimension",
+            "value": 0
+          },
+          "paragraphSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "textCase": {
+            "type": "string",
+            "value": "none"
+          }
+        },
+        "sm": {
+          "fontSize": {
+            "type": "dimension",
+            "value": 12
+          },
+          "textDecoration": {
+            "type": "string",
+            "value": "none"
+          },
+          "fontFamily": {
+            "type": "string",
+            "value": "Funnel Sans"
+          },
+          "fontWeight": {
+            "type": "number",
+            "value": 600
+          },
+          "fontStyle": {
+            "type": "string",
+            "value": "normal"
+          },
+          "fontStretch": {
+            "type": "string",
+            "value": "normal"
+          },
+          "letterSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "lineHeight": {
+            "type": "dimension",
+            "value": 18
+          },
+          "paragraphIndent": {
+            "type": "dimension",
+            "value": 0
+          },
+          "paragraphSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "textCase": {
+            "type": "string",
+            "value": "none"
+          }
         }
       }
     },
@@ -1720,6 +2033,100 @@
       }
     },
     "icon": {
+      "xl": {
+        "regular": {
+          "fontSize": {
+            "type": "dimension",
+            "value": 16
+          },
+          "textDecoration": {
+            "type": "string",
+            "value": "none"
+          },
+          "fontFamily": {
+            "type": "string",
+            "value": "Font Awesome 7 Pro"
+          },
+          "fontWeight": {
+            "type": "number",
+            "value": 400
+          },
+          "fontStyle": {
+            "type": "string",
+            "value": "normal"
+          },
+          "fontStretch": {
+            "type": "string",
+            "value": "normal"
+          },
+          "letterSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "lineHeight": {
+            "type": "dimension",
+            "value": 24
+          },
+          "paragraphIndent": {
+            "type": "dimension",
+            "value": 0
+          },
+          "paragraphSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "textCase": {
+            "type": "string",
+            "value": "none"
+          }
+        },
+        "solid": {
+          "fontSize": {
+            "type": "dimension",
+            "value": 16
+          },
+          "textDecoration": {
+            "type": "string",
+            "value": "none"
+          },
+          "fontFamily": {
+            "type": "string",
+            "value": "Font Awesome 7 Pro"
+          },
+          "fontWeight": {
+            "type": "number",
+            "value": 400
+          },
+          "fontStyle": {
+            "type": "string",
+            "value": "normal"
+          },
+          "fontStretch": {
+            "type": "string",
+            "value": "normal"
+          },
+          "letterSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "lineHeight": {
+            "type": "dimension",
+            "value": 24
+          },
+          "paragraphIndent": {
+            "type": "dimension",
+            "value": 0
+          },
+          "paragraphSpacing": {
+            "type": "dimension",
+            "value": 0
+          },
+          "textCase": {
+            "type": "string",
+            "value": "none"
+          }
+        }
+      },
       "lg": {
         "regular": {
           "fontSize": {
@@ -1732,7 +2139,7 @@
           },
           "fontFamily": {
             "type": "string",
-            "value": "Font Awesome 6 Pro"
+            "value": "Font Awesome 7 Pro"
           },
           "fontWeight": {
             "type": "number",
@@ -1778,7 +2185,7 @@
           },
           "fontFamily": {
             "type": "string",
-            "value": "Font Awesome 6 Pro"
+            "value": "Font Awesome 7 Pro"
           },
           "fontWeight": {
             "type": "number",
@@ -1826,7 +2233,7 @@
           },
           "fontFamily": {
             "type": "string",
-            "value": "Font Awesome 6 Pro"
+            "value": "Font Awesome 7 Pro"
           },
           "fontWeight": {
             "type": "number",
@@ -1872,7 +2279,7 @@
           },
           "fontFamily": {
             "type": "string",
-            "value": "Font Awesome 6 Pro"
+            "value": "Font Awesome 7 Pro"
           },
           "fontWeight": {
             "type": "number",
@@ -1920,7 +2327,7 @@
           },
           "fontFamily": {
             "type": "string",
-            "value": "Font Awesome 6 Pro"
+            "value": "Font Awesome 7 Pro"
           },
           "fontWeight": {
             "type": "number",
@@ -1966,7 +2373,7 @@
           },
           "fontFamily": {
             "type": "string",
-            "value": "Font Awesome 6 Pro"
+            "value": "Font Awesome 7 Pro"
           },
           "fontWeight": {
             "type": "number",
@@ -2015,7 +2422,7 @@
         },
         "fontFamily": {
           "type": "string",
-          "value": "Source Sans Pro"
+          "value": "Funnel Sans"
         },
         "fontWeight": {
           "type": "number",
@@ -2048,6 +2455,98 @@
         "textCase": {
           "type": "string",
           "value": "uppercase"
+        }
+      },
+      "tag": {
+        "fontSize": {
+          "type": "dimension",
+          "value": 10
+        },
+        "textDecoration": {
+          "type": "string",
+          "value": "none"
+        },
+        "fontFamily": {
+          "type": "string",
+          "value": "Funnel Sans"
+        },
+        "fontWeight": {
+          "type": "number",
+          "value": 500
+        },
+        "fontStyle": {
+          "type": "string",
+          "value": "normal"
+        },
+        "fontStretch": {
+          "type": "string",
+          "value": "normal"
+        },
+        "letterSpacing": {
+          "type": "dimension",
+          "value": 1.3
+        },
+        "lineHeight": {
+          "type": "dimension",
+          "value": 9
+        },
+        "paragraphIndent": {
+          "type": "dimension",
+          "value": 0
+        },
+        "paragraphSpacing": {
+          "type": "dimension",
+          "value": 0
+        },
+        "textCase": {
+          "type": "string",
+          "value": "uppercase"
+        }
+      },
+      "avatar": {
+        "fontSize": {
+          "type": "dimension",
+          "value": 14
+        },
+        "textDecoration": {
+          "type": "string",
+          "value": "none"
+        },
+        "fontFamily": {
+          "type": "string",
+          "value": "Source Sans Pro"
+        },
+        "fontWeight": {
+          "type": "number",
+          "value": 400
+        },
+        "fontStyle": {
+          "type": "string",
+          "value": "normal"
+        },
+        "fontStretch": {
+          "type": "string",
+          "value": "normal"
+        },
+        "letterSpacing": {
+          "type": "dimension",
+          "value": 0
+        },
+        "lineHeight": {
+          "type": "dimension",
+          "value": 8
+        },
+        "paragraphIndent": {
+          "type": "dimension",
+          "value": 0
+        },
+        "paragraphSpacing": {
+          "type": "dimension",
+          "value": 8
+        },
+        "textCase": {
+          "type": "string",
+          "value": "none"
         }
       }
     }
